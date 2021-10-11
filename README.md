@@ -1,6 +1,6 @@
 # daily_log
 daily_log is a django-based app that a user can use to create log topics and make log entries.  I created this app by following the example in the book
-Python Crash Course.  I created this app for two main reasons.  First, it will help me improve my skills for python, django, git and vs code.  Second, it
+Python Crash Course.  I wanted to create this app for two main reasons.  First, it will help me improve my skills for python, django, git and vs code.  Second, it
 will motivate me to work on areas where I have created a topic.  Topics that I plan to create include: exercise, python development, web development and continuing
 professional development (CPD) hours for my professional engineering (PE) license.
 
