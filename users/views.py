@@ -15,12 +15,10 @@ def register(request):
 
     if form.is_valid():
       new_user = form.save()
-          # Log the user in and then redirect to home page.
+      # Log the user in and then redirect to home page.
       authenticated_user = authenticate(username=new_user.username,
           password=request.POST['password1'])
-      login(request, authenticated_user)
-     
-      # return HttpResponseRedirect('daily_logs:index')     
+      login(request, authenticated_user)   
       return HttpResponseRedirect(reverse('daily_logs:index'))
 
   # Display a blank or invalid form.
