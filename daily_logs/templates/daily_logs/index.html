@@ -1,6 +1,18 @@
 {% extends "daily_logs/base.html" %}
 
+{% block header %}
+  <div class='jumbotron'>
+      <h1>Track your goals and progress.</h1>
+  </div>
+{% endblock header %}
+
 {% block content %}
-<p>Daily Log helps keep track of progress for goals such as
-    exercise and self-paced learning.</p>
+<h2>
+    <a href="{% url 'users:register' %}">Register an account</a> to create your
+    own Daily Log and track the Topics you are working on.  Daily Log helps you
+    keep track of progress for goals such as exercise and self-paced learning.
+</h2>
+<h2>
+    Whenever you work on a new topic, make an entry summarizing what you have done.
+</h2>
 {% endblock content %}

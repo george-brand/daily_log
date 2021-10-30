@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Daily Log</title>
 
@@ -37,10 +37,10 @@
         <ul class="nav navbar-nav navbar-right">
           {% if user.is_authenticated %}
             <li><a>Hello, {{ user.username }}.</a></li>
-            <li><a href="{% url 'users:logout' %}">log out</a></li>
+            <li><a href="{% url 'users:logout' %}">Log Out</a></li>
           {% else %}
-            <li><a href="{% url 'users:register' %}">register</a></li>
-            <li><a href="{% url 'users:login' %}">log in</a></li>
+            <li><a href="{% url 'users:register' %}">Register</a></li>
+            <li><a href="{% url 'users:login' %}">Log In</a></li>
           {% endif %}
         </ul>
       </div><!--/.nav-collapse -->
